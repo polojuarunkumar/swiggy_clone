@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="swiggy.css">
+</head>
+<body>
+    <header>
+        <div class="head-part">
+            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/static-assets/images/swiggy_logo_white.png" height="48px" width="160px" padding="0 30% 0 0">
+            <div class="head-container">
+                <a href="#">Swiggy Corporate</a>
+                <a href="#">Partner with us</a>
+                <a href="#" id="getApp">Get the App</a>
+                <div id="signin-btn">
+                    <a href="#" id="signIn">Sign In</a>
+                </div>
+            </div>
+        </div>
+        <div class="middle">
+            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/testing/seo-home/Veggies_new.png" id="left-img" height="450px" width="250px">
+            <div class="order">
+                <div class="order-txt">
+                    Order food &amp; groceries. Discover best restaurants. Swiggy it!
+                </div>
+            </div>
+            <div class="location">
+                <div class="location-input">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 18 23" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.115 21.8122C12.4772 19.4062 17.7886 13.4751 17.7886 8.78883C17.7886 3.79647 13.9976 0 9.00526 0C4.0129 0 0.210938 3.79647 0.210938 8.78883C0.210938 13.4755 5.52998 19.4073 7.89476 21.8129C8.51149 22.4403 9.49871 22.44 10.115 21.8122ZM8.99988 12.7888C11.4269 12.7888 13.3943 10.8214 13.3943 8.39441C13.3943 5.96745 11.4269 4 8.99988 4C6.57292 4 4.60547 5.96745 4.60547 8.39441C4.60547 10.8214 6.57292 12.7888 8.99988 12.7888Z" fill="#FF5200"></path></svg>
+                    <input type="text" placeholder="Enter your delivery location" id="loct-input">
+                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" aria-label="rating-down-down-icon" aria-hidden="false" strokeColor="rgba(2, 6, 12, 0.92)" fillColor="rgba(2, 6, 12, 0.92)"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.372 6.15a1.1 1.1 0 0 0-.117 1.552l7.184 8.355.03.035c.149.173.327.381.504.536.212.186.564.427 1.058.427s.847-.24 1.059-.427c.177-.155.355-.363.504-.536l.03-.035 7.12-8.282a1.1 1.1 0 0 0-1.668-1.434l-7.045 8.194-7.108-8.267a1.1 1.1 0 0 0-1.55-.117" fill="rgba(2, 6, 12, 0.92)" fill-opacity="0.92"></path></svg>
+                </div>
+                <div class="search-restraunt">
+                    Search for restaurant, item or more
+                </div>
+            </div>
+            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/testing/seo-home/Sushi_replace.png" id="right-img" height="450px" width="250px">
+        </div>
+        <div class="tail-part">
+            <div class="tail-cards">
+                <div class="card">
+                    <a href="#">
+                        <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/23/ec86a309-9b06-48e2-9adc-35753f06bc0a_Food3BU.png" height="308.14px" width="334.51px">
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#">
+                        <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/23/b5c57bbf-df54-4dad-95d1-62e3a7a8424d_IM3BU.png" height="308.14px" width="334.51px">
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#">
+                        <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/23/b6d9b7ab-91c7-4f72-9bf2-fcd4ceec3537_DO3BU.png" height="308.14px" width="334.51px">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="grid-container">
+            <div class="food-cards">
+                <div class="txt">
+                    Order our best food options
+                </div>
+                <div class="grid-controller">
+                    <button id="btn">
+                        <div id="left-btn">
+                            <i class="fa-sharp fa-solid fa-arrow-left"></i>
+                        </div>
+                    </button>
+                    <button id="btn">
+                        <div id="right-btn">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div class="food-slides">
+                <div class="slide1">
+                    <div class="items">
+                        <button>
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Biryani.png" height="180px" width="144px">
+                        </button>
+                    </div>
+                    <div class="items">
+                        <button>
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/South%20Indian.png" height="180px" width="144px">
+                        </button>
+                    </div>
+                    <div class="items">
+                        <button>
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/North%20Indian.png" height="180px" width="144px">
+                        </button>
+                    </div>
+                    <div class="items">
+                        <button>
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Desserts.png" height="180px" width="144px">
+                        </button>
+                    </div>
+                    <div class="items">
+                        <button>
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Chinese.png" height="180px" width="144px">
+                        </button>
+                    </div>
+                    <div class="items">
+                        <button>
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Ice%20Cream.png" height="180px" width="144px">
+                        </button>
+                    </div>
+                    <div class="items">
+                        <button>
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Burger.png" height="180px" width="144px">
+                        </button>
+                    </div>
+                    <div class="items">
+                        <button>
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Cake.png" height="180px" width="144px">
+                        </button>
+                    </div>
+                    <div class="items">
+                        <button>
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Pizza.png" height="180px" width="144px">
+                        </button>
+                    </div>
+                    <div class="items">
+                        <button>
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Dosa.png" height="180px" width="144px">
+                        </button>
+                    </div>
+                </div>
+                <div class="slide1">
+                    <div class="items">
+                        <button>
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Idli.png" height="180px" width="144px">
+                        </button>
+                    </div>
+                    <div class="items">
+                        <button>
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Shawarma.png" height="180px" width="144px">
+                        </button>
+                    </div>
+                    <div class="items">
+                        <button>
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Rolls.png" height="180px" width="144px">
+                        </button>
+                    </div>
+                    <div class="items">
+                        <button>
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Noodles.png" height="180px" width="144px">
+                        </button>
+                    </div>
+                    <div class="items">
+                        <button>
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Salad.png" height="180px" width="144px">
+                        </button>
+                    </div>
+                    <div class="items">
+                        <button>
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Tea.png" height="180px" width="144px">
+                        </button>
+                    </div>
+                    <div class="items">
+                        <button>
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Shake.png" height="180px" width="144px">
+                        </button>
+                    </div>
+                    <div class="items">
+                        <button>
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Vada.png" height="180px" width="144px">
+                        </button>
+                    </div>
+                    <div class="items">
+                        <button>
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Coffee.png" height="180px" width="144px">
+                        </button>
+                    </div>
+                    <div class="items">
+                        <button>
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Paratha.png" height="180px" width="144px">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="widget">
+            <div class="container">
+                <div class="txt">
+                    Shop groceries on Instamart
+                </div>
+                <div class="grid-controller">
+                    <button id="btn">
+                        <div id="left-btn">
+                            <i class="fa-sharp fa-solid fa-arrow-left"></i>
+                        </div>
+                    </button>
+                    <button id="btn">
+                        <div id="right-btn">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row-cards">
+                    <div id="row-card">
+                        <button>
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2025/5/14/a1493d81-f21e-415f-9875-f78383590fc2_9f3f0f68-4fbe-40f6-8f5d-5472a03469bd" height="180px" width="144px" alt="">
+                        </button>
+                        <h3>Fresh Fruits</h3>
+                    </div>
+                    <div id="row-card">
+                        <button>
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2025/5/14/6dea6676-ce07-45e6-b60c-a099c01c5462_6d33297a-5828-48ff-aa2a-c052ae97669e" height="180px" width="144px" alt="">
+                        </button>
+                        <h3>Dairy, bread and Eggs</h3>
+                    </div>
+                    <div id="row-card">
+                        <button>
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2025/5/14/097900ca-5d2d-4bb0-8e54-aede1e58dfd8_eab3796c-ac17-48fd-bfc7-6356c6f89783" height="180px" width="144px" alt="">
+                        </button>
+                        <h3>Rice, Atta and Dals</h3>
+                    </div>
+                    <div id="row-card">
+                        <button>
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2025/5/14/64714677-e6b6-41c1-b533-6644d43e55f7_76ef86af-0483-41a5-8387-37901bf4ca6a" height="180px" width="144px" alt="">
+                        </button>
+                        <h3>Masalas and Dry Fruits</h3>
+                    </div>
+                    <div id="row-card">
+                        <button>
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2025/5/14/8e48ee13-3b51-49ea-b765-5cf3e7a97c04_695caa8a-c2f6-4a1a-9672-53213fea21aa" height="180px" width="144px" alt="">
+                        </button>
+                        <h3>Oils and Ghee</h3>
+                    </div>
+                    <div id="row-card">
+                        <button>
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2024/7/6/73e018a7-d342-475e-aaca-ec5cd3d0c59f_228ff3d4-ff21-44db-9768-7a369c65ce6a" height="180px" width="144px" alt="">
+                        </button>
+                        <h3>Munchies</h3>
+                    </div>
+                    <div id="row-card">
+                        <button>
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2024/7/6/83a9b71b-1db7-4cbe-a9f7-ead650d26326_3afbe8c8-f5c8-4dd7-8357-f5711f80646b" height="180px" width="144px" alt="">
+                        </button>
+                        <h3>Sweet Tooth</h3>
+                    </div>
+                    <div id="row-card">
+                        <button>
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2024/7/6/37d399b1-52d2-47ef-bdd8-8951e51819fc_0361a93d-e864-49be-a57d-46c958eb7b56" height="180px" width="144px" alt="">
+                        </button>
+                        <h3>Cold Drinks and Juices</h3>
+                    </div>
+                    <div id="row-card">
+                        <button>
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2025/5/14/25be4b2d-a9de-495e-a9a4-9a6d6a3d13c0_5f571281-eef0-4820-9982-d8bdd9af91c6" height="180px" width="144px" alt="">
+                        </button>
+                        <h3>Meat and Seafood</h3>
+                    </div>
+                    <div id="row-card">
+                        <button>
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2024/7/6/76a7104c-0f11-4182-aa51-0d48efc2be7f_aae098f9-aaff-4504-a222-bf13595d58cd" height="180px" width="144px" alt="">
+                        </button>
+                        <h3>Biscuits and Cakes</h3>
+                    </div>
+                    <div id="row-card">
+                        <button>
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2025/5/14/1a08f110-17b6-4785-92d4-404825b75f2d_869c1986-d9c1-4d46-b1c3-10c79a052a59" height="180px" width="144px" alt="">
+                        </button>
+                        <h3>Instant and Frozen Food</h3>
+                    </div>
+                    <div id="row-card">
+                        <button>
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2025/5/14/012beae1-c31a-4360-9b32-173080b64652_aa07a04e-5f2e-4c00-86f6-297344906f01" height="180px" width="144px" alt="">
+                        </button>
+                        <h3>Cereals and Breakfast</h3>
+                    </div>
+                    <div id="row-card">
+                        <button>
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2024/7/6/e2f96940-2657-4a4b-a5e1-0c3413ba25cb_8b977351-a415-442a-bb9c-320e1642f740" height="180px" width="144px" alt="">
+                        </button>
+                        <h3>Sauces and Spreads</h3>
+                    </div>
+                    <div id="row-card">
+                        <button>
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2025/5/14/5fc3d15a-26b0-41e0-93ab-39ada0f553c2_82e0ff9f-558c-45dd-af3e-fdc16d0aa471" height="180px" width="144px"  alt="">
+                        </button>
+                        <h3>Tea, Coffee and More</h3>
+                    </div>
+                    <div id="row-card">
+                        <button>
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2024/7/6/73a47bc4-c684-447f-9908-22da3ecd3ba2_c9948a61-3dca-4e29-82b4-31178d38746b" height="180px" width="144px" alt="">
+                        </button>
+                        <h3>Cleaning Essentials</h3>
+                    </div>
+                    <div id="row-card">
+                        <button>
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2025/5/14/fc74f557-a203-4dba-8955-82d6c608e91e_7d2481f0-8614-400c-b25c-554a655c14c7" height="180px" width="144px" alt="">
+                        </button>
+                        <h3>Pharma and Hygiene</h3>
+                    </div>
+                    <div id="row-card">
+                        <button>
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2024/7/6/4342c814-6ff9-4bbe-a360-95200ad602a0_1905dc17-a04d-4a9e-9a4e-adde9b27f321" height="180px" width="144px" alt="">
+                        </button>
+                        <h3>Bath, Body and Hair</h3>
+                    </div>
+                    <div id="row-card">
+                        <button>
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2025/3/25/1eae2df9-95a5-40e5-a2c0-92bb4893637a_5e1e6c72-dde5-4a12-8bdf-c7cbc4b0644b" height="180px" width="144px" alt="">
+                        </button>
+                        <h3>Paan Corner</h3>
+                    </div>
+                    <div id="row-card">
+                        <button>
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2025/5/14/657a922d-067a-4e0b-b967-b3e0c7906fa9_485311db-2f22-4193-a05d-963f18a89150" height="180px" width="144px" alt="">
+                        </button>
+                        <h3>Home and Kitchen</h3>
+                    </div>
+                    <div id="row-card">
+                        <button>
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2025/5/14/52a66c89-6516-489f-96ac-b15286900648_ebbfd2d1-9b36-4ce3-b08c-7378f1ca6d7d" height="180px" width="144px"  alt="">
+                        </button>
+                        <h3>Office and Electricals</h3>
+                    </div>
+                    <div id="row-card">
+                        <button>
+                            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2024/7/6/cbbab04b-845a-44bd-aa63-329276af1714_c6c9dc53-ae50-475a-89d8-b03824c4a98a" height="180px" width="144px" alt="">
+                        </button>
+                        <h3>Baby Care</h3>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="download-app">
+            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/m/seo/App_download_banner.png" height="198px" width="1050px">
+        </div>
+    </main>
+
+    <footer>
+        <div class="foot1">
+            <div class="swiggy-logo">
+                <img src="https://media-assets.swiggy.com/portal/testing/seo-home/Group.svg" height="48px" width="160px">
+                <div class="copyright">© 2025 Swiggy Limited</div>
+            </div>
+            <div class="company">
+                <h3>Company</h3>
+                <a href="#">About Us</a>
+                <a href="#">Swiggy Corporate</a>
+                <a href="#">Careers</a>
+                <a href="#">Team</a>
+                <a href="#">Swiggy One</a>
+                <a href="#">Swiggy Instamart</a>
+                <a href="#">Swiggy Dineout</a>
+                <a href="#">Minis</a>
+                <a href="#">Pyng</a>
+            </div>
+            <div class="cont">
+                <div class="contact-us">
+                    <h3>Contact us</h3>
+                    <a href="#">Help &amp; Support</a>
+                    <a href="#">Partner with us</a>
+                    <a href="#">Ride with us</a>
+                </div>
+                <div class="legal">
+                    <h3>Legal</h3>
+                    <a href="#">Terms &amp; Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+            <div class="available-in">
+                <h3>Available in</h3>
+                <a href="#">Bangalore</a>
+                <a href="#">Gurgaon</a>
+                <a href="#">Hyderabad</a>
+                <a href="#">Delhi</a>
+                <a href="#">Mumbai</a>
+                <a href="#">Pune</a>
+                <button>685 cities <svg width="12" height="12" viewBox="0 0 20 21" fill="none" aria-label="rating-down-down-icon" aria-hidden="false" strokecolor="rgba(2, 6, 12, 0.92)" fillcolor="rgba(2, 6, 12, 0.92)"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.372 6.15a1.1 1.1 0 0 0-.117 1.552l7.184 8.355.03.035c.149.173.327.381.504.536.212.186.564.427 1.058.427s.847-.24 1.059-.427c.177-.155.355-.363.504-.536l.03-.035 7.12-8.282a1.1 1.1 0 0 0-1.668-1.434l-7.045 8.194-7.108-8.267a1.1 1.1 0 0 0-1.55-.117" fill="rgba(2, 6, 12, 0.92)" fill-opacity="0.92"></path></svg></button>
+            </div>
+            <div class="life-at-swiggy">
+                <h3>Life at Swiggy</h3>
+                <a href="#">Explore With Swiggy</a>
+                <a href="#">Swiggy News</a>
+                <a href="#">Snackables</a>
+                <div class="social-links">
+                    <h3 id="links">Social Links</h3>
+                    <div class="icons">
+                        <a href="#"><img src="https://media-assets.swiggy.com/portal/testing/seo-home/Linkedin.svg" height="17px" width="16px"></a>
+                        <a href="#"><img src="https://media-assets.swiggy.com/portal/testing/seo-home/icon-instagram.svg" height="17px" width="16px"></a>
+                        <a href="#"><img src="https://media-assets.swiggy.com/portal/testing/seo-home/icon-facebook.svg" height="17px" width="16px"></a>
+                        <a href="#"><img src="https://media-assets.swiggy.com/portal/testing/seo-home/icon-pinterest.svg" height="17px" width="16px"></a>
+                        <a href="#"><img src="https://media-assets.swiggy.com/portal/testing/seo-home/Twitter.svg" height="17px" width="16px"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foot2">
+            <div class="foot2-container">
+                <div class="foot2-txt">For better experience, download the Swiggy app now</div>
+                <a href="#"><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200,h_65/icon-AppStore_lg30tv" id="install" height="64px" width="196.2px"></a>
+                <a href="#"><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200,h_65/icon-GooglePlay_1_zixjxl" id="install" height="64px" width="196.2px"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
